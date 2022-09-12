@@ -164,3 +164,23 @@ section p {
   position: absolute;
   left: 2%;
 }
+
+footer {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+}
+
+footer p {
+  color: white;
+  margin: auto;
+  width: 10%;
+  padding: 0px;
+  font-size: 20px;
+}
