@@ -50,7 +50,6 @@ header {
 }
 
 h1 {
-  position: absolute;
   color: white;
   font-size: 50px;
   top: 50%;
@@ -58,8 +57,14 @@ h1 {
   left: 30%;
 }
 
-header img {
-  position: relative;
+.begin {
+  padding-top: 35vh;
+  background-color: #999;
+  background-image: url("./img/front-page.png");
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding-bottom: 35vh;
+  background-size: cover;
 }
 
 main {
@@ -67,102 +72,53 @@ main {
   color: white;
 }
 
-section {
-  position: relative;
-  height: 715px;
+.lead {
+  height: 100vh;
+  width: 99vw;
 }
 
-section h2 {
+h2 {
+  margin: 30px;
   font-size: 40px;
-  margin: auto;
-  width: 10%;
-  padding: 10px;
+  text-align: center;
 }
 
-#HTML-CSS div {
-  margin: auto;
-  position: absolute;
-  padding: 2%;
-  left: 2%;
-  padding-top: 5%;
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20%;
+  margin: 30px;
 }
 
-#HTML-CSS div img {
-  width: 45vw;
-  background-color: black;
+.left img {
+  width: 90%;
 }
 
-#HTML-CSS article {
-  margin: auto;
-  padding-top: 5%;
-  position: absolute;
-  right: 0%;
-}
-
-section p {
-  text-align: left;
-  padding: 2%;
+.left article {
   font-size: 1.5vw;
+  height: 100%;
+  width: 50%;
 }
 
-#Javascript div {
-  margin: auto;
-  position: absolute;
-  padding: 2%;
-  right: 2%;
-  padding-top: 5%;
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20%;
+  margin: 50px;
 }
 
-#Javascript div img {
-  width: 20vw;
-  background-color: black;
+.right img {
+  width: 90%;
 }
 
-#Javascript article {
-  margin: auto;
-  padding-top: 8%;
-  position: absolute;
-  left: 2%;
+.right article {
+  font-size: 1.5vw;
+  height: 100%;
+  width: 50%;
 }
 
-#PHP div {
-  margin: auto;
-  position: absolute;
-  padding: 2%;
-  left: 2%;
-  padding-top: 5%;
-}
-
-#PHP div img {
-  width: 35vw;
-  background-color: black;
-}
-
-#PHP article {
-  margin: auto;
-  padding-top: 8%;
-  position: absolute;
-  right: 0%;
-}
-
-#SQL div {
-  margin: auto;
-  position: absolute;
-  padding: 2%;
-  right: 2%;
-  padding-top: 5%;
-}
-
-#SQL div img {
-  width: 35vw;
-  background-color: black;
-}
-
-#SQL article {
-  margin: auto;
-  padding-top: 10%;
-  position: absolute;
-  left: 2%;
+.jvimg {
+  width: 80%;
 }
 
 footer {
