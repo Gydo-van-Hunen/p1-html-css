@@ -15,8 +15,7 @@ body {
 
 nav {
   display: flex;
-  width: 100%;
-  padding: 2rem;
+  width: 100vw;
   min-height: 10vh;
   align-items: center;
   flex-wrap: wrap;
@@ -30,11 +29,14 @@ nav ul {
   display: flex;
   align-items: center;
   list-style-type: none;
+  padding: 2rem;
+  margin: 0 5rem 0 0;
 }
 
 nav li {
   font-size: 2.5rem;
   padding: 0 4rem 0 4rem;
+  color: white;
 }
 
 nav a {
@@ -52,7 +54,7 @@ header {
 
 h1 {
   color: white;
-  font-size: 50px;
+  font-size: 5rem;
   top: 50%;
   text-align: center;
   left: 30%;
@@ -141,4 +143,47 @@ footer p {
   width: 10%;
   padding: 0px;
   font-size: 20px;
+}
+
+.j2 {
+  display: inline-block;
+  position: relative;
+  margin: -2rem 0 -2rem 0;
+  padding: 3rem;
+}
+
+.display_j2{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  margin: 3rem 0 0 -3rem;
+  z-index: 1;
+  font-size: 2.5rem;
+}
+
+.display_j2 ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.display_j2 a{
+  color: #00a8c7;
+}
+
+.j2:hover {
+  background-color: white;
+}
+
+.j2:hover li {
+  color: #00a8c7;
+}
+
+.j2:hover .display_j2 {
+  display: block;
+}
+
+.display_j2 li:hover {
+  background-color: #E9E9E9;
 }
