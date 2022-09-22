@@ -54,10 +54,10 @@ header {
 
 h1 {
   color: white;
-  font-size: 5rem;
-  top: 50%;
+  font-size: 8rem;
+  top: 50vh;
   text-align: center;
-  left: 30%;
+  left: 30vw;
 }
 
 .begin {
@@ -75,74 +75,52 @@ main {
   color: white;
 }
 
-.lead {
-  height: 100vh;
-  width: 99vw;
-  padding-top: 15vh;
-}
-
 h2 {
-  margin: 30px;
-  font-size: 40px;
+  font-size: 6rem;
   text-align: center;
 }
 
+.lead {
+  height: 100vh;
+}
+
+.lead p {
+  font-size: 3rem;
+}
+
+.lead img {
+  width: 40vw;
+}
+
 .left {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20%;
-  margin: 30px;
-}
-
-.left img {
-  width: 90%;
-}
-
-.left article {
-  font-size: 1.5vw;
-  height: 100%;
-  width: 50%;
+  display: flex;
+  margin: 6rem 5rem 5rem 5rem;
 }
 
 .right {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20%;
-  margin: 50px;
+  display: flex;
+  margin: 3rem;
 }
 
-.right img {
-  width: 90%;
+.lead article {
+  width: 50vw;
+  margin: 0 3rem 0 0rem;
+}
+
+.left article {
+  margin-left: 20vw;
 }
 
 .right article {
-  font-size: 1.5vw;
-  height: 100%;
-  width: 50%;
-}
-
-.jvimg {
-  width: 80%;
+  margin-right: 20vw;
 }
 
 footer {
-  display: flex;
-  width: 100%;
-  padding: 2rem;
-  min-height: 10vh;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  background: #00a8c7;
-  justify-content: space-between;
-}
-
-footer p {
+  background-color: #00a8c7;
+  text-align: center;
   color: white;
-  margin: auto;
-  width: 10%;
-  padding: 0px;
-  font-size: 20px;
+  font-size: 3rem;
+  padding: 2rem;
 }
 
 .j2 {
@@ -176,7 +154,7 @@ footer p {
   background-color: white;
 }
 
-.j2:hover li {
+.j2:hover a {
   color: #00a8c7;
 }
 
