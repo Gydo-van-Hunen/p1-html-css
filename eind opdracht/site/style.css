@@ -1,0 +1,236 @@
+*  {
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#title {
+    background-color: #131c27;
+    color: white;
+    width: 100vw;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-left: 10rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+    margin: 2.5rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10rem;
+}
+
+nav li {
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+section {
+    background-color: #999999;
+    background-repeat: none;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+#tbl {
+    background-image: url(./img/landing-page.jpg);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article {
+    margin: 2.5rem;
+    font-weight: 300rem;
+    font-size: 4.5rem;
+}
+
+#tbl button {
+    padding: 2rem 6rem 2rem 6rem;
+    font-size: 2rem;
+    background-color: #4c6e97;
+    color: white;
+    border: 0 none white;
+}
+
+#tte {
+    background-image: url(./img/new-york-page.png);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 4rem;
+}
+
+#tte header{
+    text-decoration: underline;
+}
+
+#tpte header {
+    background-color: #131c27;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#tpte h2 {
+    font-size: 4rem;
+    padding-top: 1rem;
+}
+
+#tpte {
+    height: 120vh;
+    background-color: white;
+}
+
+#tpte .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+.main section{
+    height: 60vh;
+    width: 35rem;
+    background-color: white;
+    box-shadow: 0.3rem 0.5rem 6rem grey;
+}
+
+.main article {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main article h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#tpte img {
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+#cu {
+    background-image: url(./img/contact-mountain.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cu article {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3rem;
+    color: white;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    font-size: 6rem;
+}
+
+#cu article div {
+    margin-top: 5rem;
+}
+
+#cu button {
+    font-size: 2rem;
+    background-color: #4c6e97;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    top: 5rem;
+    border: 0 none white;
+    border-radius: 0rem 0rem 3rem 3rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+form input {
+    width: 20rem;
+}
+
+
+@media screen and (max-width: 576px) {
+    #title {
+        background-color: #131c27;
+        color: white;
+        width: 100vw;
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    
+    h1 {
+        font-family: 'Pattaya', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 400;
+        margin-left: 0rem;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0rem;
+    }
+    
+    nav li {
+        margin: 2rem 2rem 2rem 2rem;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    section {
+        background-color: #999999;
+        background-repeat: none;
+        background-position: center;
+        height: 200vh;
+        background-size: cover;
+    }
+}
