@@ -1,4 +1,4 @@
-*  {
+* {
     margin: 0rem;
     padding: 0rem;
     font-size: 62.5%;
@@ -9,44 +9,51 @@ body {
     font-weight: 500;
 }
 
-#title {
+nav {
     background-color: #131c27;
     color: white;
     width: 100vw;
+    position: fixed;
     display: flex;
-    padding: 1rem;
+    justify-content: center;
+    height: 15vh;
+}
+
+nav div {
+    display: flex;
+    width: 90vw;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
 }
 
-h1 {
-    font-family: 'Pattaya', sans-serif;
-    font-size: 2.8rem;
-    font-weight: 400;
-    margin-left: 10rem;
-}
-
-h2 {
-    font-size: 4.5rem;
-    margin: 2.5rem;
-}
-
-nav ul{
-    list-style-type: none;
+nav ul {
+    width: 30vw;
     display: flex;
-    justify-content: space-around;
-    margin-right: 10rem;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0 1rem;
 }
 
 nav li {
-    margin: 2rem 5rem 2rem 5rem;
+    margin: 0 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 2rem;
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 4.5rem;
+    margin: 2.5rem;
 }
 
 section {
@@ -91,7 +98,7 @@ article {
     font-size: 4rem;
 }
 
-#tte header{
+#tte header {
     text-decoration: underline;
 }
 
@@ -124,7 +131,7 @@ article {
     padding: 5rem 0rem 5rem 0rem;
 }
 
-.main section{
+.main section {
     height: 60vh;
     width: 35rem;
     background-color: white;
@@ -180,6 +187,24 @@ article {
     border-radius: 0rem 0rem 3rem 3rem;
 }
 
+footer {
+    background-color: #131c27;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    font-size: 4rem;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    list-style-type: none;
+}
+
 .button:hover {
     cursor: pointer;
 }
@@ -190,47 +215,223 @@ form input {
 
 
 @media screen and (max-width: 576px) {
-    #title {
+    nav {
         background-color: #131c27;
         color: white;
         width: 100vw;
-        display: flex;
-        padding: 1rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         position: fixed;
-    }
-    
-    h1 {
-        font-family: 'Pattaya', sans-serif;
-        font-size: 2.8rem;
-        font-weight: 400;
-        margin-left: 0rem;
+        display: flex;
+        justify-content: center;
+        height: 20vh;
     }
 
-    nav ul{
-        list-style-type: none;
+    nav div {
         display: flex;
-        justify-content: space-around;
-        margin-right: 0rem;
+        width: 90vw;
+        justify-content: center;
+        flex-direction: column;
     }
-    
+
+    nav ul {
+        width: 30vw;
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        margin: 0 0rem;
+    }
+
     nav li {
-        margin: 2rem 2rem 2rem 2rem;
+        margin: 0 1rem;
     }
-    
+
     nav a {
         color: white;
         text-decoration: none;
         font-size: 2rem;
     }
 
+    h1 {
+        font-family: 'Pattaya', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin: 2rem;
+    }
+
     section {
         background-color: #999999;
         background-repeat: none;
         background-position: center;
-        height: 200vh;
+        height: 150vh;
         background-size: cover;
+    }
+
+    #tbl {
+        background-image: url(./img/landing-page.jpg);
+        background-blend-mode: multiply;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    article {
+        margin: 2rem;
+        font-weight: 300rem;
+        font-size: 3rem;
+        width: 60vw;
+    }
+
+    #tbl button {
+        padding: 2rem 6rem 2rem 6rem;
+        font-size: 2rem;
+        background-color: #4c6e97;
+        color: white;
+        border: 0 none white;
+        margin: 2rem;
+    }
+
+    #tte {
+        background-image: url(./img/new-york-page.png);
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        color: white;
+        font-size: 4rem;
+    }
+
+    #tte h2 {
+        font-size: 4rem;
+    }
+
+    #tte article {
+        width: 70vw;
+    }
+
+    #tte header {
+        text-decoration: underline;
+    }
+
+    #tpte header {
+        background-color: #131c27;
+        color: white;
+        font-size: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    #tpte h2 {
+        font-size: 4rem;
+        padding-top: 1rem;
+    }
+
+    #tpte {
+        height: inherit;
+        background-color: white;
+    }
+
+    #tpte header p {
+        width: 80vw;
+    }
+
+    #tpte .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 7rem;
+    }
+
+    .main section {
+        height: 60vh;
+        width: 70vw;
+        background-color: white;
+        box-shadow: 0.3rem 0.5rem 6rem grey;
+        margin: 2rem;
+    }
+
+    .main article {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .main article h3 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    #tpte img {
+        height: 5rem;
+        margin-top: 2rem;
+    }
+
+    #cu {
+        background-image: url(./img/contact-mountain.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cu article {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 3rem;
+        color: white;
+        height: 50vh;
+        width: 75vw;
+        text-align: center;
+        font-size: 6rem;
+    }
+
+    #cu article div {
+        margin-top: 5rem;
+    }
+
+    #cu button {
+        font-size: 2rem;
+        background-color: #4c6e97;
+        color: white;
+        display: block;
+        width: 100%;
+        height: 5rem;
+        position: relative;
+        top: 5rem;
+        border: 0 none white;
+        border-radius: 0rem 0rem 3rem 3rem;
+    }
+
+    footer {
+        background-color: #131c27;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+        font-size: 4rem;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    footer ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+        list-style-type: none;
+        margin-top: 2rem;
+    }
+
+    .button:hover {
+        cursor: pointer;
+    }
+
+    form input {
+        width: 20rem;
     }
 }
