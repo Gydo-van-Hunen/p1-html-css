@@ -99,7 +99,17 @@ article {
 }
 
 #tte header {
-    text-decoration: underline;
+
+    margin-left: 3rem;
+}
+
+#tte h2 {
+    border-bottom: 0.6rem white solid;
+    width: fit-content;
+}
+
+#tte article {
+    margin-left: 5rem;
 }
 
 #tpte header {
@@ -311,10 +321,6 @@ form input {
 
     #tte article {
         width: 70vw;
-    }
-
-    #tte header {
-        text-decoration: underline;
     }
 
     #tpte header {
